@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cctent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inconsolata&family=Merriweather&family=Playfair+Display:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <label class="logo">N</label>
+        <ul>
+            <li ><a class="underline" href="home.html">Home</a></li>
+            <li ><a class="underline" href="#quotebox">Quote Box</a></li>
+            <li ><a class="underline" href="#hero">Hero Converter</a></li>
+            <li ><a class="underline" href="#cal">Calculator</a></li>
+            <li ><a class="underline" href="#magic">Magic Box</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <a name="quotebox"></a>
+        <div id="wrapper">
+            <header>Quote</header>
+            <div class="content">
+                <div class="quotearea">
+                    <p class="quote"><q class="quo">We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are.</q></p>
+                </div>
+                <div class="author">
+                    <span>__</span>
+                    <span class="name"> Sirius Black</span>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="button1"></button>
+            <button id="button2"></button>
+            <button id="button3"></button>
+            <button id="button4"></button>
+        </div>
+        <a name="hero"></a>
+        <div class="hero">
+            <h2>Hero Converter</h2>
+            <div class="input">
+                <input type="text" id="input" placeholder="Enter Weight">
+                <select id="unit">
+                    <option value="lbtokg">lb to kg</option>
+                    <option value="kgtolb">kg to lb</option>
+                </select>
+                <button type="submit" id="submit">Convert</button>
+
+
+            </div>
+            <div class="output">
+                <p>Result</p>
+                <input type="text" id="output">
+            </div>
+
+        </div>
+        <a name="cal"></a>
+        <div class="calculation">
+            <div class="numinput">
+                <p>Input Series of Number</p>
+                <input type="text" id="number" placeholder="12,20,50,10">
+            </div>
+            <br>
+            <p id="max">Max: </p>
+            <p id="min">Min</p>
+            <p id="sum">Sum</p>
+            <p id="average">Average</p>
+            <p id="reverse">Reverse</p>
+        </div>
+        <a name="magic"></a>
+        <div class="magic">
+            <h2>MAGIC BOX</h2>
+            <textarea id="text-area"></textarea>
+            <br>
+            <button id="clear-button">Clear</button>
+            <button id="capitalize-button">Capitalize</button>
+            <button id="sort-button">Sort</button>
+            <button id="reverse-button">Reverse</button>
+            <button id="strip-button">Strip Blank </button>
+            <button id="line-numbers-button">Add Numbers</button>
+            <button id="shuffle-button">Shuffle </button>
+        </div>
+    </div>
+
+
+<script src="quote.js"></script>
+</body>
+</html>
