@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Bankist | When Banking meets Minimalist</title>
+
+
+
+  </head>
+  <body class="bg-slate-100">
+    <nav class="nav flex flex-row justify-evenly text-white p-3 font-oswald text-xl sticky top-0 z-50 ">
+      <a class="py-2" href="#section--1" onmouseover="changeOpacity(this)" onmouseout="restoreOpacity(this)">Features</a>
+      <a class="py-2" href="#section--2" onmouseover="changeOpacity(this)" onmouseout="restoreOpacity(this)">Operations</a>
+      <a class="py-2" href="#section--3" onmouseover="changeOpacity(this)" onmouseout="restoreOpacity(this)">Testimonials</a>
+      <a  class="show-modal bg-green-400 py-2 px-6 rounded-full text-black hover:bg-green-500 duration-300" href="#">Open account</a>
+    </nav>
+    
+    <!-- Modal -->
+    <section>
+      <div class="modal hidden z-10  bg-slate-100 rounded-lg text-center space-y-4  transition-all duration-300">
+        <button class="close-modal">&times;</button>
+        <h2 class="text-2xl pb-8 font-oswald">
+          Open your bank account <br />
+          in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="flex flex-col space-y-4 font-oswald max-w-sm mx-auto">
+          <div class="flex justify-between ">
+            <label class="text-left">First Name</label>
+            <input type="text" />
+          </div>
+          <div class="flex justify-between">
+            <label class="text-left">Last Name</label>
+            <input type="text" />
+          </div>
+          <div class="flex justify-between">
+            <label class="text-left">Email</label>
+            <input type="text" />
+          </div>
+          <button class="btn bg-green-400 py-2 max-w-sm px-6 rounded-full hover:bg-green-500 duration-300 ">Next step &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay z-5 hidden"></div>
+    </section>
+
+<!-- top section -->
+  <section class="pb-8">
+    
+    <div class=" pt-40 pb-40  section-container justify-between mx-auto items-center flex  flex-col md:flex-row p-6 space-y-10 md:space-y-0">
+      <div class=" w-4/5 md:text-left text-center space-y-3">
+          <h1 id="topname" class="md:text-6xl  text-4xl font-bold font-oswald uppercase "> When banking meets
+            minimalist</h1>
+
+          <p class="  max-w-96  md:slate-200 pt-3 font-oswald md:text-2xl text-xl tracking-wider leading-10">
+            A simpler banking experience for a simpler life.</p>
+          <button class="border-b text-lime-600 border-lime-600 text-lg font-semibold font-oswald">Learn more &DownArrow;</button>
+      </div>
+      <div class="w-1/2 flex ">
+          <img src="./images/pattern.jpg" class="   max-h-[400px]  " >
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Middle -->
+  <section>
+    <div class="reveal section-container my-20 ">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+        <!-- Image -->
+        <div class="md:w-1/2">
+            <img src="images/computer.png" alt="" class="md:absolute top-0 right-[50%]"/>
+        </div>
+        <!-- Items Container -->
+        <div class="flex flex-col mt-16 mb-24 font-roboto space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16">
+            <!-- Item 1 -->
+            <div>
+                <h5 class="font-bold text-gray-700 ">Quick Scan</h5>
+                <p class="max-w-md  text-slate-500">
+                    Quick Scan is the faster method for detecting viruses
+                </p>
+            </div>
+            <div>
+                <h5 class="font-bold text-gray-700 ">Performance</h5>
+                <p class="max-w-md text-slate-500">
+                    Lorem ipsum dolor sit amet consecteum minustionem dignissimos vitae maiores odio nam quam consequatur.
+                </p>
+            </div>
+            <div>
+                <h5 class="font-bold text-gray-700 ">Core Shield</h5>
+                <p class="max-w-md text-slate-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis commodi culpa ducimus qui repell
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reveal">
+    <div class="section-container my-20">
+        <h3 class="text-center text-4xl mb-6 font-poppins font-bold tracking-tighter
+        text-gray-700 md:text-4xl">Access Shield Antivirus Anywhere </h3>
+        <p class="max-w-3xl mx-auto mb-10 text-2xl leading-10 font-poppins text-slate-500">
+            We offer comprehensive protection against viruses, malware, and online threats, safeguarding your devices and personal information. 
+        </p>
+        <img src="./images/antivirus.jpg" class="mx-auto">
+    </div>
+</section>
+<!-- supercharge section-->
+<section>
+    <div class="reveal section-container my-20">
+        <h3 class="text-center text-4xl mb-6 font-poppins font-bold tracking-tighter
+        text-gray-700 md:text-4xl">Related Works </h3>
+        <p class="max-w-3xl mx-auto mb-10 text-2xl leading-10 font-poppins text-slate-500">
+            We offer comprehensive protection against viruses, malware, and online threats, safeguarding your devices and personal information. 
+        </p>
+        <!-- items container -->
+        <div class="flex flex-col items-center space-y-16 justify-between md:flex-row md:space-y-0 md:space-x-12">
+            <div class="flex flex-col items-center space-y-5">
+                <img src="./images/icon-blacklist.svg" alt="">
+                <h5 class="font-bold text-gray-700 ">Create Blacklist</h5>
+                <p class="max-w-md text-slate-500">
+                    Lorem ipsum dolor sit amet consecteum minustionem
+                </p>
+            </div>
+            <div class="flex flex-col items-center space-y-5">
+                <img src="./images/icon-preview.svg" alt="">
+                <h5 class="font-bold text-gray-700 ">Create Blacklist</h5>
+                <p class="max-w-md text-slate-500">
+                    Lorem ipsum dolor sit amet consecteum minustionem
+                </p>
+            </div>
+            <div class="flex flex-col items-center space-y-5">
+                <img src="./images/icon-text.svg" alt="">
+                <h5 class="font-bold text-gray-700 ">Create Blacklist</h5>
+                <p class="max-w-md text-slate-500">
+                    Lorem ipsum dolor sit amet consecteum minustionem
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- slider -->
+<section class="mb-16">
+  <div class="slider">
+    <div class="slide"><img src="images/2.jfif" alt="Photo 1" /></div>
+    <div class="slide"><img src="images/1.jpg" alt="Photo 2" /></div>
+    <div class="slide"><img src="images/3.jpg" alt="Photo 3" /></div>
+    <div class="slide"><img src="images/batman.jpg" alt="Photo 4" /></div> 
+    <button class="slider__btn slider__btn--left">&larr;</button>
+    <button class="slider__btn slider__btn--right">&rarr;</button>
+    <div class="dots"></div>
+  </div>
+</section>
+<!-- Bottom -->
+
+  </body>
+</html>
