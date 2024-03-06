@@ -4,5 +4,5 @@ A simple page using HTML, CSS & JavaScript which generates random quotes with ea
 # Bank Page
 A page implementing a pop up modal, section reveal on scroll and an image slider
 
-#Map app
+# Map App
 A page that shows your current location. It is just a practice page of using API
