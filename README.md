@@ -6,3 +6,6 @@ A page implementing a pop up modal, section reveal on scroll and an image slider
 
 # Map App
 A page that shows your current location. It is just a practice page of using API
+
+# Image Search App
+A page that shows images based on your search using Pexels API
